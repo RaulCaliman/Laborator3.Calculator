@@ -1,27 +1,27 @@
 package org.example;
 
 public class Calculator {
-    private int rezultat;
+    protected double rezultat;
 
-    public Calculator(int x) {
+    public Calculator(double x) {
         this.rezultat = x;
 
     }
-    public void adunare(int y){
+    public void adunare(double y){
         rezultat+= y;
     }
-    public void scadere(int y){
+    public void scadere(double y){
         rezultat -= y;
     }
-    public void inmultire(int y){
+    public void inmultire(double y){
         rezultat *=y;
     }
-    public void impartire(int y){
+    public void impartire(double y){
          if(y ==0){
              throw new ArithmeticException();
          }
     }
-    public int getRezultat(){
+    public double getRezultat(){
         return rezultat;
     }
 }
