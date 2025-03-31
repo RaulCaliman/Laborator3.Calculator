@@ -3,11 +3,9 @@ package org.example;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        AdvancedCalc c = new AdvancedCalc(10);
-        c.adunare(2);
-        c.scadere(1);
-        c.impartire(2);
-        c.getRezultat();
+        Calculator c = new Calculator(10);
+        c.adunare(10).exponenti(10);
+
 
     }
 }
